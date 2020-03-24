@@ -3,7 +3,7 @@
 杨伊凡、19302010071
 * 2 GitHub地址与GitHub Pages地址
 https://github.com/yyfyang/SOFT130002_Project-1.git
-git@github.com:yyfyang/SOFT130002_Project-1.git
+https://yyfyang.github.io/SOFT130002_Project-1/
 * 3 项目完成情况
 基本完成：九个页面全部可以相互正常跳转，文本框可以正确输入，按钮有响应，辅助按钮有效
 * 4 bonus完成情况与解决方法
