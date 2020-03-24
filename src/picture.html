@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的照片</title>
+    <style type="text/css">
+        body,li,ul,a{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            overflow-y: scroll;
+        }
+        .menu{
+            font-size: 0;
+            height: 50px;
+            padding-left: 5%;
+            background-color: #00a2ca;
+            position: absolute;
+            width: 100%;
+            z-index: 77;
+        }
+        .menubar{
+            margin: 0 auto;
+            list-style-type: none;
+            width: 100%;
+            float: left;
+        }
+        .menubar li{
+            padding:0 5px;
+            display:inline-block;
+            cursor: pointer;
+            line-height: 50px;
+            float: left;
+        }
+        .menubar li:hover{
+            background-color:dodgerblue;
+        }
+        .menubar a	{
+            display: block;
+            height: 50px;
+            font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体",serif ;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        .list{
+            position: relative;
+        }
+
+        .menubar li:hover .move li:hover{
+            background-color: lightskyblue;
+            width: 80px;
+        }
+        .move{
+            width: 80px;
+        }
+        .list:hover .move{
+            display: block;
+        }
+        .move {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <ul class="menubar">
+        <li class="" ><a href="firstPage.html">首页</a></li>
+        <li class="" ><a href="browser.html">浏览页</a></li>
+        <li class="" ><a href="search.html">搜索页</a></li>
+        <li class="list"  style=" background-color: #0095bb;"><a>个人中心</a>
+            <ul class="move">
+                <li>
+                    <div style="background-image: url('../img/上传.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="upload.html">上传</a></div></li>
+                <li><div style="background-image: url('../img/照片.jpg') ;background-repeat: no-repeat;background-size:18px 18px;background-color: cornflowerblue"><a href="picture.html">我的照片</a></div></li>
+                <li><div style="background-image: url('../img/收藏.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="like.html">我的收藏</a></div></li>
+                <li ><div style="background-image: url('../img/登入.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="../index.html">登入</a></div> </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div>
+    <a href="detaiL.html"><img src="../img/F1.jpg" alt="图片" style="position: relative;top: 150px;left: 227px;height: 230px;width: 330px"></a>
+    <p style="position: relative;top: -90px;left: 600px">图片标题：<br>第一张<br><br>图片描述：<br>这组高山建筑，布局周密，结构严谨，铜铁铸造，玲珑精巧，造价极高。<br>整个建筑宏伟，布局严谨。楼亭仓舍，左右对称，贴金彩、画，装饰细腻。 建筑物<br>的外表一律为白色和奶油色瓷砖所铺盖，远远看去，整个建筑物宛如白帆竞发，浩<br>
+        浩荡荡，给人以静中有动的感觉。 坐落在树丛中的宫殿，露出一个玻璃瓦顶，恰似<br>一座座金色的岛屿。. 这儿更多的是现代情调的建筑，用自己笔直的线条，银色的钢<br>窗，给人新颖，大方和舒适的感觉。整座建筑给人以一种肃穆，静谧和森严的气……</p>
+    <a href="detaiL.html"><img src="../img/F0.jpg" alt="图片" style="position: relative;top: -70px;left: 227px;height: 230px;width: 330px"></a>
+    <p style="position: relative;top: -310px;left: 600px">图片标题：<br>第二张<br><br>图片描述：<br>这组高山建筑，布局周密，结构严谨，铜铁铸造，玲珑精巧，造价极高。<br>整个建筑宏伟，布局严谨。楼亭仓舍，左右对称，贴金彩、画，装饰细腻。 建筑物<br>的外表一律为白色和奶油色瓷砖所铺盖，远远看去，整个建筑物宛如白帆竞发，浩<br>
+        浩荡荡，给人以静中有动的感觉。 坐落在树丛中的宫殿，露出一个玻璃瓦顶，恰似<br>一座座金色的岛屿。. 这儿更多的是现代情调的建筑，用自己笔直的线条，银色的钢<br>窗，给人新颖，大方和舒适的感觉。整座建筑给人以一种肃穆，静谧和森严的气……</p>
+    <a href="detaiL.html"><img src="../img/F4.jpg" alt="图片" style="position: relative;top: -280px;left: 227px;height: 230px;width: 330px"></a>
+    <p style="position: relative;top: -520px;left: 600px">图片标题：<br>第三张<br><br>图片描述：<br>这组高山建筑，布局周密，结构严谨，铜铁铸造，玲珑精巧，造价极高。<br>整个建筑宏伟，布局严谨。楼亭仓舍，左右对称，贴金彩、画，装饰细腻。 建筑物<br>的外表一律为白色和奶油色瓷砖所铺盖，远远看去，整个建筑物宛如白帆竞发，浩<br>
+        浩荡荡，给人以静中有动的感觉。 坐落在树丛中的宫殿，露出一个玻璃瓦顶，恰似<br>一座座金色的岛屿。. 这儿更多的是现代情调的建筑，用自己笔直的线条，银色的钢<br>窗，给人新颖，大方和舒适的感觉。整座建筑给人以一种肃穆，静谧和森严的气……</p>
+    <a href="detaiL.html"><img src="../img/F7.jpg" alt="图片" style="position: relative;top: -490px;left: 227px;height: 230px;width: 330px"></a>
+    <p style="position: relative;top: -730px;left: 600px">图片标题：<br>第四张<br><br>图片描述：<br>这组高山建筑，布局周密，结构严谨，铜铁铸造，玲珑精巧，造价极高。<br>整个建筑宏伟，布局严谨。楼亭仓舍，左右对称，贴金彩、画，装饰细腻。 建筑物<br>的外表一律为白色和奶油色瓷砖所铺盖，远远看去，整个建筑物宛如白帆竞发，浩<br>
+        浩荡荡，给人以静中有动的感觉。 坐落在树丛中的宫殿，露出一个玻璃瓦顶，恰似<br>一座座金色的岛屿。. 这儿更多的是现代情调的建筑，用自己笔直的线条，银色的钢<br>窗，给人新颖，大方和舒适的感觉。整座建筑给人以一种肃穆，静谧和森严的气……</p>
+    <a href="detaiL.html"><img src="../img/F2.jpg" alt="图片" style="position: relative;top: -690px;left: 227px;height: 230px;width: 330px"></a>
+    <p style="position: relative;top: -940px;left: 600px">图片标题：<br>第一张<br><br>图片描述：<br>这组高山建筑，布局周密，结构严谨，铜铁铸造，玲珑精巧，造价极高。<br>整个建筑宏伟，布局严谨。楼亭仓舍，左右对称，贴金彩、画，装饰细腻。 建筑物<br>的外表一律为白色和奶油色瓷砖所铺盖，远远看去，整个建筑物宛如白帆竞发，浩<br>
+        浩荡荡，给人以静中有动的感觉。 坐落在树丛中的宫殿，露出一个玻璃瓦顶，恰似<br>一座座金色的岛屿。. 这儿更多的是现代情调的建筑，用自己笔直的线条，银色的钢<br>窗，给人新颖，大方和舒适的感觉。整座建筑给人以一种肃穆，静谧和森严的气……</p>
+    <div style="position: relative;top: -900px;text-align: center">
+        <p> <img src="../img/首页.jpg" style="height: 20px;width:  20px" alt="图片"> 2 3 4 5 6 7 8 9 <img src="../img/末页.jpg" style="height: 20px;width: 20px" alt="图片"></p>
+    </div>
+    <input type="button" value="修改" onclick="location.href='upload.html'" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -2030px;left:1020px">
+    <input type="button" value="修改" onclick="location.href='upload.html'" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -1770px;left:980px">
+    <input type="button" value="修改" onclick="location.href='upload.html'" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -1500px;left:930px">
+    <input type="button" value="修改" onclick="location.href='upload.html'" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -1240px;left:890px">
+    <input type="button" value="修改" onclick="location.href='upload.html'" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -980px;left:850px">
+    <input type="button" value="删除" onclick="alert('删除成功')" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -2030px;left:920px">
+    <input type="button" value="删除" onclick="alert('删除成功')" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -1770px;left:880px">
+    <input type="button" value="删除" onclick="alert('删除成功')" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -1500px;left:830px">
+    <input type="button" value="删除" onclick="alert('删除成功')" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -1240px;left:790px">
+    <input type="button" value="删除" onclick="alert('删除成功')" style="background-color: #bddcbb;border-style: none;color: #3030a9;position: relative;top: -980px;left:750px">
+</div>
+<footer style="position: relative;text-align: center;top: -900px; color: darkslategray " >
+    <p>备案号：19302010071</p>
+</footer>
+</body>
+</html>

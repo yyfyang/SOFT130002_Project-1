@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览</title>
+    <style type="text/css">
+        body,li,ul,a{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            overflow-y: scroll;
+        }
+        .menu{
+            font-size: 0;
+            height: 50px;
+            padding-left: 5%;
+            background-color: #00a2ca;
+            position: absolute;
+            width: 100%;
+            z-index: 77;
+        }
+        .menubar{
+            margin: 0 auto;
+            list-style-type: none;
+            width: 100%;
+            float: left;
+        }
+        .menubar li{
+            padding:0 5px;
+            display:inline-block;
+            cursor: pointer;
+            line-height: 50px;
+            float: left;
+        }
+        .menubar li:hover{
+            background-color:dodgerblue;
+        }
+        .menubar li.menu-value
+        {
+            background-color: #0095bb;
+        }
+        .menubar a	{
+            display: block;
+            height: 50px;
+            font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体",serif ;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        .list{
+            position: relative;
+        }
+
+        .menubar li:hover .move li:hover{
+            background-color: lightskyblue;
+            width: 80px;
+        }
+        .move{
+            width: 80px;
+        }
+        .list:hover .move{
+            display: block;
+        }
+        .move {
+            display: none;
+        }
+        .sidebar{
+            margin-top: 50px;
+            float: left;
+            width: 190px;
+            background: lightblue;
+            position: relative;
+            height: 100%;
+        }
+        .country li{
+            list-style-type: none;
+            cursor: pointer;
+        }
+        .country li:hover{
+            background: lightcyan;
+            background-size: 100px;
+        }
+        .country a{
+            text-decoration: none;
+            color: darkblue;
+        }
+        .country{
+            position: relative;
+            left: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="menu">
+    <ul class="menubar">
+        <li class="" ><a href="firstPage.html">首页</a></li>
+        <li class="menu-value" ><a href="browser.html">浏览页</a></li>
+        <li class="" ><a href=" search.html">搜索页</a></li>
+        <li class="list"  ><a>个人中心</a>
+            <ul class="move">
+                <li>
+                    <div style="background-image: url(' ../img/上传.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="upload.html">上传</a></div></li>
+                <li><div style="background-image: url('../img/照片.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="picture.html">我的照片</a></div></li>
+                <li><div style="background-image: url('../img/收藏.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="like.html">我的收藏</a></div></li>
+                <li ><div style="background-image: url('../img/登入.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="../index.html">登入</a></div> </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="sidebar">
+    <h3 style="position: relative;left: 15px">标题浏览：<br><label>
+        <input type="text" >
+    </label><input type="button" value="搜索" onclick="alert('搜索成功')"></h3>
+    <h3 style="position: relative;left: 15px">热门国家快速浏览：</h3>
+    <ul class="country" >
+        <li><a href="" onclick="alert('刷新')">中国</a></li>
+        <li><a href="" onclick="alert('刷新')">俄罗斯</a></li>
+        <li><a href="" onclick="alert('刷新')">泰国</a></li>
+        <li><a href="" onclick="alert('刷新')">英国</a></li>
+        <li><a href="" onclick="alert('刷新')">意大利</a></li>
+    </ul>
+    <h3 style="position: relative;left: 15px">热门城市快速浏览：</h3>
+    <ul class="country">
+        <li><a href="" onclick="alert('刷新')">上海</a></li>
+        <li><a href="" onclick="alert('刷新')">北京</a></li>
+        <li><a href="" onclick="alert('刷新')">伦敦</a></li>
+        <li><a href="" onclick="alert('刷新')">曼谷</a></li>
+        <li><a href="" onclick="alert('刷新')">莫斯科</a></li>
+    </ul><br>
+    <div>
+            <a href="detaiL.html"><img src="../img/F1.jpg" alt="图片" style="position: relative;bottom:350px;left: 240px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F3.jpg" alt="图片" style="position: relative;bottom:685px;left: 620px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F8.jpg" alt="图片" style="position: relative;bottom:1020px;left: 1000px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F9.jpg" alt="图片" style="position: relative;bottom:980px;left: 240px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F0.jpg" alt="图片" style="position: relative;bottom:1315px;left: 620px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F7.jpg" alt="图片" style="position: relative;bottom:1650px;left: 1000px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F5.jpg" alt="图片" style="position: relative;bottom:1600px;left: 240px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F2.jpg" alt="图片" style="position: relative;bottom:1935px;left: 620px;height: 330px;width: 330px"></a>
+            <a href="detaiL.html"><img src="../img/F4.jpg" alt="图片" style="position: relative;bottom:2273px;left: 1000px;height: 330px;width: 330px"></a>
+        <label for="country"></label><select id="country" onchange="nextChange()" style="position: absolute;top: 30px;left: 280px;width: 100px">
+            <option selected="selected">国家</option>
+            <option>中国</option>
+            <option>日本</option>
+            <option>意大利</option>
+            <option>俄罗斯</option>
+        </select>
+        <label for="city"></label><select id="city" style="position: absolute;top: 30px;left: 400px;width: 100px">
+            <option>城市</option>
+        </select>
+        <label>
+            <select style="position: absolute;top: 30px;left: 520px;width: 100px">
+                <option>风景</option>
+                <option>建筑</option>
+                <option>动物</option>
+                <option>生活</option>
+            </select>
+        </label>
+        <input type="button" value="筛选" width="80" onclick="alert('筛选成功')" style="position: absolute;top: 30px;left: 650px">
+    </div>
+</div>
+<script>
+    function nextChange() {
+        var country=document.getElementById("country");
+        var city=document.getElementById("city");
+        city.options.length=0;
+        if (country.selectedIndex===0){
+            city.options.add(new Option("城市","0",false,true));
+
+        }
+        if (country.selectedIndex===1){
+            city.options.add(new Option("上海","0",false,true));
+            city.options.add(new Option("北京","1"));
+            city.options.add(new Option("昆明","2"));
+            city.options.add(new Option("湖北","3"));
+        }
+        if (country.selectedIndex===2){
+            city.options.add(new Option("东京","0",false,true));
+            city.options.add(new Option("北海道","1"));
+            city.options.add(new Option("大阪","2"));
+            city.options.add(new Option("冲绳","3"));
+        }
+        if (country.selectedIndex===3){
+            city.options.add(new Option("罗马","0",false,true));
+            city.options.add(new Option("米兰","1"));
+            city.options.add(new Option("威尼斯","2"));
+            city.options.add(new Option("热那亚","3"));
+        }
+        if (country.selectedIndex===4){
+            city.options.add(new Option("圣彼得堡","0",false,true));
+            city.options.add(new Option("莫斯科","1"));
+            city.options.add(new Option("罗斯托夫","2"));
+            city.options.add(new Option("萨马拉","3"));
+        }
+    }
+</script>
+<div style="position: relative;top: 1250px;text-align: center">
+    <p> <img src="../img/首页.jpg" style="height: 20px;width:  20px" alt="图片"> 2 3 4 5 6 7 8 9 <img src="../img/末页.jpg" style="height: 20px;width: 20px" alt="图片"></p>
+</div>
+<footer style="position: relative;text-align: center;top: 1300px; color: darkslategray " >
+    <p>备案号：19302010071</p>
+</footer>
+</body>
+</html>

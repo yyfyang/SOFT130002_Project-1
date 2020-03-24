@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<style type="text/css">
+    body,li,ul,a{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        color: white;
+        background-image: url("../img/header.jpg");
+        background-repeat: no-repeat;
+        background-position: 300px 50px;
+        background-size: 800px 500px;
+        overflow-y: scroll;
+        background-color: gray;
+        overflow-x: hidden;
+    }
+    .menu{
+        font-size: 0;
+        height: 50px;
+        padding-left: 5%;
+        background-color: #00a2ca;
+        position: relative;
+    }
+    .menubar{
+        margin: 0 auto;
+        list-style-type: none;
+        width: 100%;
+        float: left;
+    }
+    .menubar li{
+        padding:0 5px;
+        display:inline-block;
+        cursor: pointer;
+        line-height: 50px;
+        float: left;
+    }
+    .menubar li:hover{
+        background-color:dodgerblue;
+    }
+    .menubar li.menu-value
+    {
+        background-color: #0095bb;
+    }
+    .menubar a	{
+        display: block;
+        height: 50px;
+        font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体",serif ;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .list{
+        position: relative;
+    }
+
+    .menubar li:hover .move li:hover{
+        background-color: lightskyblue;
+        width: 80px;
+    }
+    .move{
+        width: 80px;
+    }
+    .list:hover .move{
+        display: block;
+    }
+    .move{
+        display: none;
+    }
+    .picture li{
+        float: left;
+        width: 28%;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+        top: 600px;
+        left: 140px;
+
+    }
+    .picture li img{
+        position: center;
+        width: 90%;
+        height: 300px;
+    }
+
+</style>
+<body>
+<div class="menu">
+    <ul class="menubar">
+        <li class="menu-value" ><a href="firstPage.html">首页</a></li>
+        <li class="" ><a href="browser.html">浏览页</a></li>
+        <li class="" ><a href="search.html">搜索页</a></li>
+        <li class="list"  ><a>个人中心</a>
+            <ul class="move">
+                <li>
+                    <div style="background-image: url('../img/上传.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="upload.html">上传</a></div></li>
+                <li><div style="background-image: url('../img/照片.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="picture.html">我的照片</a></div></li>
+                <li><div style="background-image: url('../img/收藏.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="like.html">我的收藏</a></div></li>
+                <li ><div style="background-image: url('../img/登入.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="../index.html">登入</a></div> </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div>
+    <ul class="picture">
+        <li><a href="detaiL.html"><img src="../img/F1.jpg" alt="图片"></a><p>图片标题：&emsp;建筑<br>图片描述：<br>这是一座美丽的建筑。它建于公元xxx年，由xxx设计，一共花费了xx年建成……<br>拍摄者：xxx &emsp;&emsp; 时间：2019/11/29</p></li>
+        <li><a href="detaiL.html"><img src="../img/F2.jpg"  alt="图片"></a><p>图片标题：&emsp;建筑<br>图片描述：<br>这是一座美丽的建筑。它建于公元xxx年，由xxx设计，一共花费了xx年建成……<br>拍摄者：xxx &emsp;&emsp; 时间：2019/05/09</p></li>
+        <li><a href="detaiL.html"><img src="../img/F3.jpg" alt="图片"></a><p>图片标题：&emsp;建筑<br>图片描述：<br>这是一座美丽的建筑。它建于公元xxx年，由xxx设计，一共花费了xx年建成……<br>拍摄者：xxx &emsp;&emsp; 时间：2010/07/15</p></li>
+        <li><a href="detaiL.html"><img src="../img/F4.jpg" alt="图片"></a><p>图片标题：&emsp;建筑<br>图片描述：<br>这是一座美丽的建筑。它建于公元xxx年，由xxx设计，一共花费了xx年建成……<br>拍摄者：xxx &emsp;&emsp; 时间：2018/03/18</p></li>
+        <li><a href="detaiL.html"><img src="../img/F5.jpg" alt="图片"></a><p>图片标题：&emsp;风景<br>图片描述：<br>浓密的树叶在伸展开去的枝条上微微蠕动，却隐藏不住那累累的硕果。看得……<br>拍摄者：xxx &emsp;&emsp; 时间：2017/01/14</p></li>
+        <li><a href="detaiL.html"><img src="../img/F6.jpg" alt="图片"></a><p>图片标题：&emsp;风景<br>图片描述：<br>浓密的树叶在伸展开去的枝条上微微蠕动，却隐藏不住那累累的硕果。看得……<br>拍摄者：xxx &emsp;&emsp; 时间：2016/06/05</p></li>
+    </ul>
+</div>
+<div style="position: fixed;top: 700px;left: 1350px;width: 80px;height: 80px" >
+    <input type="image" src="../img/刷新.jpg" onclick="alert('刷新成功')" alt="图片">
+    <a href="#top"><input type="image" src="../img/置顶.jpg"  alt="图片"></a>
+</div>
+<footer style="position: relative;right: 560px;top: 1600px; color: darkslategray " >
+    <p>联系电话：15002116228<br>备案号：19302010071</p>
+</footer>
+</body>
+</html>

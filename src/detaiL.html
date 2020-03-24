@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片详情</title>
+</head>
+<style type="text/css">
+    body,li,ul,a{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        overflow-y: scroll;
+    }
+    .menu{
+        font-size: 0;
+        height: 50px;
+        padding-left: 5%;
+        background-color: #00a2ca;
+        position: absolute;
+        z-index: 77;
+        width: 100%;
+    }
+    .menubar{
+        margin: 0 auto;
+        list-style-type: none;
+        width: 100%;
+        float: left;
+    }
+    .menubar li{
+        padding:0 5px;
+        display:inline-block;
+        cursor: pointer;
+        line-height: 50px;
+        float: left;
+    }
+    .menubar li:hover{
+        background-color:dodgerblue;
+    }
+    .menubar li.menu-value
+    {
+        background-color: #0095bb;
+    }
+    .menubar a	{
+        display: block;
+        height: 50px;
+        font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体",serif ;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .list{
+        position: relative;
+    }
+
+    .menubar li:hover .move li:hover{
+        background-color: lightskyblue;
+        width: 80px;
+    }
+    .move{
+        width: 80px;
+    }
+    .list:hover .move{
+        display: block;
+    }
+    .move{
+        display: none;
+    }
+
+</style>
+<body>
+<div class="menu">
+    <ul class="menubar">
+        <li class="menu-value" ><a href="firstPage.html">首页</a></li>
+        <li class="" ><a href="browser.html">浏览页</a></li>
+        <li class="" ><a href="search.html">搜索页</a></li>
+        <li class="list"  ><a>个人中心</a>
+            <ul class="move">
+                <li>
+                    <div style="background-image: url('../img/上传.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a>上传</a></div></li>
+                <li><div style="background-image: url('../img/照片.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a>我的照片</a></div></li>
+                <li><div style="background-image: url('../img/收藏.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="like.html">我的收藏</a></div></li>
+                <li ><div style="background-image: url('../img/登入.jpg') ;background-repeat: no-repeat;background-size:18px 18px"><a href="../index.html">登入</a></div> </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div>
+    <h1 style="position:relative;top: 100px;left: 650px ">图片详情</h1>
+    <h2 style="position: relative;top: 100px;left: 665px">风起云涌</h2>
+    <h3 style="position: relative;top: 100px;left: 760px">——张大师</h3>
+    <p style="position: relative;left: 100px;top: 105px"><img src="../img/F6.jpg" style="float: left" alt="图片"></p>
+    <p style="position: relative;left: 100px;top: 110px">&emsp;主题：风景<br>&emsp;地理位置：亚洲<br>&emsp;国家：中国<br>&emsp;城市：广西<br>&emsp;&emsp;&emsp;浓密的树叶在伸展开去的枝条上微微蠕动，却隐藏不住那累累的硕果。看<br>&emsp;得见在那树丛里还有偶尔闪光的露珠，就像在雾夜中耀眼的星星一样。一片连<br>&emsp;绵的山脉印入眼帘，山峦被迷雾笼罩着，显得神秘而秀美。又一个小憩，眼中<br>&emsp;的风景有了大的变化。再看那座山，雾已渐渐退去，一座
+        形似“山”字的山体，<br>&emsp;清晰且真实的呈现在了眼前，此时感觉我们与自然间的距离更近了，不得不叹<br>&emsp;服自然界的鬼斧神差之造化，一切浑然天成，一切都是大自然呈现出的真实美。</p>
+    <p style="position: absolute ;left: 800px;top: 500px">已收藏&emsp;1,234&emsp;<input type="button" value="收藏" style="width: 300px;color: red" onclick="alert('收藏成功')" > </p>
+</div>
+<footer style="position: relative;left: 0;top: 400px; color: darkslategray " >
+    <p>联系电话：15002116228<br>备案号：19302010071</p>
+</footer>
+</body>
+</html>
